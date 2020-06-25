@@ -1,0 +1,8 @@
+datasets/ratings.csv
+datasets/links.csv
+datasets/merge.csv
+datasets/pivot.csv
+knn.pkl
+venv/
+.DS_Store/
+.idea/
