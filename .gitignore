@@ -4,5 +4,5 @@ datasets/merge.csv
 datasets/pivot.csv
 knn.pkl
 venv/
-.DS_Store/
-.idea/
+.DS_Store
+.idea
