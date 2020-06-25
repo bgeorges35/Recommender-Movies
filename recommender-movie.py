@@ -95,10 +95,10 @@ if __name__ == "__main__":
     distances, indices = model_knn.kneighbors(movie_features_df_matrix[query_index], n_neighbors=11)
     for i in range(0, len(distances.flatten())):
         if i == 0:
-            print('\n\nRecommendations for {}: weight rated: {:.2f}/10\n'.format(df.index[query_index][0],
+            print('\n\nRecommendations for \033[91m {}\033[00m: weight rated: {:.2f}/10\n'.format(df.index[query_index][0],
                                                                                  df.index[query_index][1]))
         else:
-            print('{}: {} weight rated: {:.2f}/10, with distance of: {:.4f}'.format(i,
+            print('{}: \033[91m {}\033[00m weight rated: {:.2f}/10, with distance of: {:.4f}'.format(i,
                                                                                     df.index[indices.flatten()[i]][0],
                                                                                     df.index[indices.flatten()[i]][1],
                                                                                     distances.flatten()[i]))
